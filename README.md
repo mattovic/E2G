@@ -15,12 +15,12 @@ Ordering system
 
 ## Database
 
-MySQL or SQlite
+SQlite
 
 ## Server
 
-OS?
-Cloud?
+Rassberry Pi
+Sina Cloud
 
 
 
