@@ -3,20 +3,24 @@ Aim to provide a purchase request portal.
 
 ## Frontend
 
-Wechat public account： https://mp.weixin.qq.com/
+Wechat public account： https://mp.weixin.qq.com/  
+Pre study how to authenticate with server. Link to example code:  
 
 ## Backend
 
-Flask: http://flask.pocoo.org/
+Flask: http://flask.pocoo.org/  
+Logical:  
+Shopping list (data structure)  
+Ordering system  
 
 ## Database
 
-MySQL or SQlite
+SQlite
 
 ## Server
 
-OS?
-Cloud?
+Rassberry Pi
+Sina Cloud
 
 
 
