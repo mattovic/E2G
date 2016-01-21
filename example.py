@@ -8,10 +8,10 @@ def authenticate():
   
   token = 'fuckmyself'
   
-  signature = request.args.['signature']
-  timestamp = request.args.['timestamp']
-  nonce = request.args.['nonce']
-  echostr = request.args.['echostr']
+  signature = request.args['signature']
+  timestamp = request.args['timestamp']
+  nonce = request.args['nonce']
+  echostr = request.args['echostr']
   
   triplet = sorted([token, timestamp, nonce])
   tmpstr =hash(triplet[1] + triplet[2] + triplet[3])
