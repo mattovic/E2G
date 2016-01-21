@@ -22,7 +22,7 @@ def authenticate():
     if signature == hashcode:
         return echostr
     else:
-        return "Error"
+        return False
 
 if __name__ == '__main__':
     app.debug = True
