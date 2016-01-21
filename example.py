@@ -13,8 +13,7 @@ def authenticate():
   nonce = request.args.['nonce']
   echostr = request.args.['echostr']
   
-  triplet = [token, timestamp, nonce]
-  sorted(triplet)
+  triplet = sorted([token, timestamp, nonce])
   tmpstr =hash(triplet[1] + triplet[2] + triplet[3])
   
   if (echostr == tempstr):
