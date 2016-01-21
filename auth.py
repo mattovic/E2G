@@ -9,11 +9,12 @@ app = Flask(__name__)
 @app.route('/auth')
 def authenticate():
     token = 'brandnewday'
+    # fetch incoming arguments
     signature = request.args['signature']
     timestamp = request.args['timestamp']
     nonce = request.args['nonce']
     echostr = request.args['echostr']
-
+    
     triplet = sorted([token, timestamp, nonce])
     sha1 = hashlib.sha1()
     tempstr = sha1.update(triplet[0] + triplet[1] + triplet[2])
