@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/auth')
 def authenticate():
     token = 'brandnewday'
-    # fetch incoming arguments
+    
     signature = request.args['signature']
     timestamp = request.args['timestamp']
     nonce = request.args['nonce']
