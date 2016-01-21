@@ -8,13 +8,13 @@ def authenticate():
   
   token = 'xxxxxx'
   
-  signature = request.args.get('signature')
-  timestamp = request.args.get('timestamp')
-  nonce = request.args.get('nonce')
-  echostr = request.args.get('echostr')
+  signature = request.args.['signature']
+  timestamp = request.args.['timestamp']
+  nonce = request.args.['nonce']
+  echostr = request.args.['echostr']
   
   triplet = [token, timestamp, nonce]
-  triplet.sort()
+  sorted(triplet)
   tmpstr =hash(triplet[1] + triplet[2] + triplet[3])
   
   if (echostr == tempstr):
