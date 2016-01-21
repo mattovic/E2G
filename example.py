@@ -6,7 +6,7 @@ app = (__name__)
 @app.route('/auth')
 def authenticate():
   
-  token = 'xxxxxx'
+  token = 'fuckmyself'
   
   signature = request.args.['signature']
   timestamp = request.args.['timestamp']
