@@ -4,7 +4,14 @@ Aim to provide a purchase request portal.
 ## Frontend
 
 Wechat public account： https://mp.weixin.qq.com/  
-Pre study how to authenticate with server. Link to example code:  
+
+## Accomplishment
+
+* Authentication is finished. 
+
+## To do
+
+message send/reply through wechat
 
 ## Backend
 
