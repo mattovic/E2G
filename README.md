@@ -7,12 +7,12 @@ Wechat public account： https://mp.weixin.qq.com/
 
 ## Accomplishment
 
-* Authentication is finished. 
+* Authentication is implemented. 
 * Parrot function is implemented.
 
 ## To do
 
-message send/reply through wechat
+* database add/delete/modify/get through wechat
 
 ## Backend
 
