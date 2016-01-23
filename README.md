@@ -8,6 +8,7 @@ Wechat public account： https://mp.weixin.qq.com/
 ## Accomplishment
 
 * Authentication is finished. 
+* Parrot function is implemented.
 
 ## To do
 
