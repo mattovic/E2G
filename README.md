@@ -13,6 +13,7 @@ Wechat public account： https://mp.weixin.qq.com/
 ## To do
 
 * database add/delete/modify/get through wechat
+* dict to xml
 
 ## Backend
 
@@ -29,6 +30,3 @@ SQlite
 
 Rassberry Pi
 Sina Cloud
-
-
-
