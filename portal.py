@@ -1,31 +1,30 @@
-from flask import Flask
-from flask import request
-from flask import redirect
+# -*- coding: utf-8 -*-
+
+import hashlib
+import time
+from flask import Flask, request, make_response
+from xml.etree import ElementTree as ET
+import func
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return redirect('https://github.com/mattovic/E2G')
-
-# get brands list
-@app.route('/brands/', methods=['GET'])
-def get_brands_list():
-    return 'Brands list'
-
-# get products list
-@app.route('/brands/products/', methods=['GET'])
-def get_products_list():
-    return 'Products list'
-
-# get product details or upload a product
-@app.route('/brands/products/<product_id>', methods=['GET', 'POST'])
-def products():
+@app.route('/', methods=['GET', 'POST'])
+def authenticate():
     if request.method == 'GET':
-        get_product_details()
+        token = 'brandnewday'
+        signature = request.args['signature']
+        timestamp = request.args['timestamp']
+        nonce = request.args['nonce']
+        echostr = request.args['echostr']
+        triplet = sorted([token, timestamp, nonce])
+        sha1 = hashlib.sha1()
+        tempstr = sha1.update(triplet[0] + triplet[1] + triplet[2])
+        hashcode = sha1.hexdigest()
+        if signature == hashcode:
+                return echostr
     else:
-        upload_product()
+        return func.parrot.parrot()
 
 if __name__ == '__main__':
     app.debug = True
-    app.run()
+    app.run(host='192.168.7.101', port=10080)

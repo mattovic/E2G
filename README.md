@@ -4,7 +4,16 @@ Aim to provide a purchase request portal.
 ## Frontend
 
 Wechat public account： https://mp.weixin.qq.com/  
-Pre study how to authenticate with server. Link to example code:  
+
+## Accomplishment
+
+* Authentication is implemented. 
+* Parrot function is implemented.
+
+## To do
+
+* database add/delete/modify/get through wechat
+* dict to xml
 
 ## Backend
 
@@ -21,6 +30,3 @@ SQlite
 
 Rassberry Pi
 Sina Cloud
-
-
-
