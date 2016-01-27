@@ -1,35 +1,41 @@
-DROP TABLE main;
-
-CREATE TABLE main (
-record_id varchar(32),
-exercise_id varchar(32),
-catalog_id varchar(32),
-resistance decimal(4,3),
-repetition integer,
-date varchar(10),
-created_at varchar(50)
+DROP TABLE merchandises;
+CREATE TABLE merchandises (
+merchandise_id varchar(32),
+merchandise_name text
 );
 
-DROP TABLE exercise;
-
-CREATE TABLE exercise (
-exercise_id varchar(32),
-name varchar(50),
-catalog_id varchar(32)
+DROP TABLE makeups;
+CREATE TABLE makeups (
+merchandise_id varchar(32),
+category_id varchar(32),
+category_name text
 );
 
-DROP TABLE catalog;
-
-CREATE TABLE catalog (
-catalog_id varchar(32),
-name varchar(50)
+DROP TABLE brands;
+CREATE TABLE brands (
+category_id varchar(32),
+brand_id varchar(32),
+brand_name text
 );
 
-DROP TABLE user;
+DROP TABLE products_brand;
+CREATE TABLE products_brand (
+brand_id varchar(32),
+product_id varchar(32),
+product_name text
+);
 
-CREATE TABLE user (
-user_id varchar(32),
-name varchar(50),
-token varchar(32),
-password varchar(50)
+DROP TABLE products_category;
+CREATE TABLE products_category (
+category_id varchar(32),
+product_id varchar(32),
+product_name text
+);
+
+DROP TABLE products_details;
+CREATE TABLE products_details (
+product_id varchar(32),
+product_desc text,
+product_price float,
+product_in_stock integer
 );
