@@ -36,6 +36,6 @@ DROP TABLE products_details;
 CREATE TABLE products_details (
 product_id varchar(32),
 product_desc text,
-product_price float,
+product_price integer,
 product_in_stock integer
 );
