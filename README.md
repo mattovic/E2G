@@ -17,6 +17,7 @@ Wechat public account： https://mp.weixin.qq.com/
 * dict to xml
 * reply with hyperlink
 * reply text format
+* automatic reply after friend added (send a commands list)
 
 ## Backend
 
