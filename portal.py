@@ -23,7 +23,8 @@ def authenticate():
         if signature == hashcode:
                 return echostr
     else:
-        return func.parrot.parrot()
+#        return func.parrot.parrot()
+        return func.response.response()
 
 if __name__ == '__main__':
     app.debug = True
