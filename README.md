@@ -9,11 +9,14 @@ Wechat public account： https://mp.weixin.qq.com/
 
 * Authentication is implemented. 
 * Parrot function is implemented.
+* Database get through wechat
 
 ## To do
 
-* database add/delete/modify/get through wechat
+* database add/delete/modify through wechat
 * dict to xml
+* reply with hyperlink
+* reply text format
 
 ## Backend
 
